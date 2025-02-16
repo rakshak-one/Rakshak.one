@@ -99,8 +99,9 @@
         }
         .card img {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
+            height: auto;
+            max-height: 250px;
+            object-fit: contain;
             border-radius: 8px;
             margin-bottom: 10px;
         }
@@ -133,7 +134,7 @@
                         if (file.name !== ".gitkeep") {
                             let cleanTitle = file.name.replace(/[-_]/g, ' ').replace(/\.html/, '').replace(/\d+/, '').trim();
                             let imagePath = `images/${file.name.replace(/\.html/, '.jpg')}`;
-                            let newsletterPath = `newsletters/${file.name}.html`; 
+                            let newsletterPath = `newsletters/${file.name}`; 
                             
                             let card = document.createElement("div");
                             card.classList.add("card");
