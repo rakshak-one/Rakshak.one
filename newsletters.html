@@ -78,7 +78,12 @@
                     let newsletterContainer = document.getElementById("newsletter-container");
                     data.forEach(file => {
                         if (file.name !== ".gitkeep") {
-                            let cleanTitle = file.name.replace(/[-_]/g, ' ').replace(/\.html/, '').replace(/\d+/g, '').trim();
+                            let cleanTitle = file.name
+                                .replace(/[-_]/g, ' ')
+                                .replace(/\.html/, '')
+                                .replace(/\b\w{10,}\b/g, '')  // Removes long hash-like strings
+                                .replace(/\d+/, '')  // Removes numeric prefixes
+                                .trim();
                             let card = document.createElement("div");
                             card.classList.add("card");
                             card.innerHTML = `
