@@ -126,4 +126,7 @@ header {
 .enter-button:hover {
     background: #cc4f00;
 }
+.dot {
+    color: #FF6300;
+}
 
