@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #E4E4E4; /* Grey Background */
+    color: #000; /* Black Text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+h1 .dot {
+    color: #FF6300; /* Orange Punctuation */
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+strong {
+    font-weight: 600;
+}
+
+.enter-button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #FF6300; /* Orange Button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.enter-button:hover {
+    background: #cc4f00; /* Darker shade of Orange */
+}
+
+footer {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+}
