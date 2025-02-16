@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newsletters</title>
+    <title>Illusion of Progress</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
         
         body {
             font-family: 'Inter', sans-serif;
-            text-align: center;
+            text-align: left;
             margin: 0;
             padding: 0;
             background-color: #111;
@@ -19,146 +19,98 @@
             align-items: center;
             padding: 40px 20px;
         }
-        .header {
+        .content {
+            max-width: 800px;
             width: 100%;
-            max-width: 1000px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
-        .logo {
-            font-size: 36px;
-            font-weight: 700;
-            color: #fff;
-            margin: 0 auto;
-            position: relative;
-        }
-        .logo::after {
-            content: " ●";
+        h1, h2, h3 {
             color: #FFA500;
-            font-size: 36px;
-            position: absolute;
-            right: -15px;
+            margin-top: 20px;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .reference {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .reference a {
+            color: #FFA500;
+            text-decoration: none;
+            font-weight: bold;
         }
         .back-button {
+            margin-bottom: 20px;
             padding: 10px 15px;
             background: #FFA500;
             color: #111;
             text-decoration: none;
             border-radius: 5px;
             font-weight: 600;
-            font-size: 16px;
-        }
-        .social-icons {
-            display: flex;
-            gap: 15px;
-        }
-        .social-icons a {
-            color: #FFA500;
-            text-decoration: none;
-            font-size: 24px;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            max-width: 1000px;
-            width: 100%;
-            margin-top: 20px;
-        }
-        .card {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease-in-out;
-            text-align: center;
-            max-width: 320px;
-            margin: auto;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        .card h2 {
-            font-size: 18px;
-            margin-bottom: 10px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .card a {
             display: inline-block;
-            margin-top: 10px;
-            padding: 12px 18px;
-            background: #FFA500;
-            color: #111;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: 600;
-            font-size: 14px;
-        }
-        .card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 10px;
         }
         @media (max-width: 600px) {
-            .grid {
-                grid-template-columns: 1fr;
+            .content {
+                padding: 15px;
             }
-            .header {
-                flex-direction: column;
-                text-align: center;
-                gap: 10px;
+            h1 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 14px;
             }
         }
     </style>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="header">
-        <a href="index.html" class="back-button">Back</a>
-        <h1 class="logo">Rakshak</h1>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/rakshakhh/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/rakshak243/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+    <a href="../newsletters.html" class="back-button">← Back to Newsletters</a>
+
+    <div class="content">
+        <h1>Illusion of Progress</h1>
+
+        <h3>Short Description:</h3>
+        <p>We don’t need to save the planet. We need to save ourselves from our own worldview.</p>
+
+        <h3>The Illusion of Progress</h3>
+        <p>In 2015, 180 nations united under the banner of <strong>Sustainable Development Goals (SDGs)</strong>—a global framework to secure a sustainable future. The rhetoric was strong. The commitments were clear. Capital, leadership, and expertise were poured into the mission.</p>
+        <p>By 2020, the results were in: <strong>zero measurable progress.</strong> In fact, many parameters had <strong>regressed</strong>—not just stagnating but actively reversing course, wiping out whatever incremental gains had been made before 2015.</p>
+        <p>How does a worldwide movement, backed by the most powerful institutions on Earth, result in failure?</p>
+
+        <h3>The Paradox of Freedom</h3>
+        <p>Sustainability is not just about <strong>what to do</strong>—it’s about <strong>what to stop doing.</strong> But a society built on the idea of <strong>unrestricted human agency</strong> cannot accept limits.</p>
+        
+        <ul>
+            <li>If you believe that <strong>human creativity and ingenuity</strong> will solve the problem, you assume that more innovation is the answer.</li>
+            <li>But every efficiency <strong>fuels greater consumption</strong>, not less. <strong>LEDs reduced energy consumption per bulb but increased total energy demand.</strong> New technology creates temporary relief, then escalates the problem at scale.</li>
+        </ul>
+
+        <p>A civilization wired for <strong>infinite expansion</strong> cannot solve a crisis caused by <strong>excess</strong>.</p>
+
+        <h3>The Cognitive Shift We Need</h3>
+        <p>The planet does not need saving. <strong>We do.</strong></p>
+        <p>The Earth doesn’t debate policies or measure carbon footprints. It only needs to shift an inch, and we could be erased. The real crisis is <strong>civilizational.</strong> It is about how we define <strong>progress, success, and even freedom itself.</strong></p>
+        <p>If every large-scale problem is a <strong>problem of collaboration</strong>, then sustainability will not be achieved through <strong>more technology</strong>—it will be achieved through a <strong>redefinition of the human role in the system.</strong> Until then, sustainability will remain nothing more than an illusion we chase while accelerating our own collapse.</p>
+
+        <div class="reference">
+            📌 <strong>Reference:</strong> 
+            <a href="https://www.youtube.com/watch?v=fPJHRz48Phs" target="_blank">Cognitive Shift to Solve Global Crisis – Raghava Krishna</a>
         </div>
     </div>
-    
-    <h1>Newsletters</h1>
-    
-    <div class="grid" id="newsletter-container">
-        <!-- Dynamic content will be inserted here -->
-    </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            fetch("https://api.github.com/repos/rakshak-one/Rakshak.one/contents/newsletters")
-                .then(response => response.json())
-                .then(data => {
-                    let newsletterContainer = document.getElementById("newsletter-container");
-                    data.forEach(file => {
-                        if (file.name !== ".gitkeep") {
-                            let cleanTitle = file.name.replace(/[-_]/g, ' ').replace(/\.html/, '').replace(/\d+/, '').trim();
-                            let fileNameWithoutExtension = file.name.replace(/\.html$/, '');
-                            let imagePath = `images/${fileNameWithoutExtension}.jpg`;
-
-                            let card = document.createElement("div");
-                            card.classList.add("card");
-                            card.innerHTML = `
-                                <img src="${imagePath}" alt="${cleanTitle}" onerror="this.onerror=null; this.src='images/default.jpg';">
-                                <h2>${cleanTitle}</h2>
-                                <a href="newsletters/${file.name}" target="_blank">Read More</a>
-                            `;
-                            newsletterContainer.appendChild(card);
-                        }
-                    });
-                })
-                .catch(error => console.error("Error fetching newsletters:", error));
-        });
-    </script>
 </body>
 </html>
