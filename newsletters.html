@@ -133,12 +133,14 @@
                         if (file.name !== ".gitkeep") {
                             let cleanTitle = file.name.replace(/[-_]/g, ' ').replace(/\.html/, '').replace(/\d+/, '').trim();
                             let imagePath = `images/${file.name.replace(/\.html/, '.jpg')}`;
+                            let newsletterPath = `newsletters/${file.name}.html`; 
+                            
                             let card = document.createElement("div");
                             card.classList.add("card");
                             card.innerHTML = `
-                                <img src="${imagePath}" alt="${cleanTitle}">
+                                <img src="${imagePath}" alt="${cleanTitle}" onerror="this.src='images/default.jpg';">
                                 <h2>${cleanTitle}</h2>
-                                <a href="newsletters/${file.name}" target="_blank">Read More</a>
+                                <a href="${newsletterPath}" target="_blank">Read More</a>
                             `;
                             newsletterContainer.appendChild(card);
                         }
