@@ -5,95 +5,33 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #E4E4E4;
-    color: #111;
+    background-color: #111;
+    color: #E4E4E4;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1000px;
-    padding: 20px 0;
-}
-
-.logo {
+/* Headings */
+h1 {
     font-size: 36px;
     font-weight: 700;
-    color: #111;
     position: relative;
 }
 
-.logo span {
+h1 span {
     color: #FF6300;
 }
 
-/* Page Title */
-.page-title {
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-/* Grid Layout */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    max-width: 1000px;
-    width: 100%;
-    margin-top: 20px;
-}
-
-/* Newsletter Card */
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    text-align: center;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.card h3 {
+/* Text */
+p {
     font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
+    line-height: 1.6;
+    max-width: 600px;
 }
 
-.read-more {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background: #FF6300;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.read-more:hover {
-    background: #cc4f00;
-}
+/* Enter Button */
 .enter-button {
     display: inline-block;
     margin-top: 20px;
@@ -106,31 +44,27 @@ header {
     font-size: 18px;
     border: none;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 .enter-button:hover {
     background: #cc4f00;
 }
-.dot {
-    color: #FF6300;
-}
+
 /* Social Media Icons */
 .social-links {
     display: flex;
-    justify-content: center; /* Ensures perfect centering */
-    align-items: center;
-    gap: 20px; /* Space between icons */
-    margin-top: 30px; /* Adjust spacing below the Enter button */
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 .social-icon {
-    width: 28px; /* Adjusted for perfect proportion */
-    height: 28px;
-    transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;
+    width: 32px;
+    height: 32px;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .social-icon:hover {
     opacity: 0.7;
-    transform: scale(1.1); /* Subtle hover effect */
 }
-
