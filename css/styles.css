@@ -129,4 +129,20 @@ header {
 .dot {
     color: #FF6300;
 }
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 32px; /* Adjust size */
+    height: 32px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+}
 
