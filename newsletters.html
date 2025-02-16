@@ -27,7 +27,7 @@
         }
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
             max-width: 1000px;
             width: 100%;
@@ -38,13 +38,19 @@
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease-in-out;
+            text-align: center;
+            max-width: 350px;
+            margin: auto;
         }
         .card:hover {
             transform: translateY(-5px);
         }
         .card h2 {
-            font-size: 20px;
+            font-size: 18px;
             margin-bottom: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         .card a {
             display: inline-block;
@@ -72,10 +78,11 @@
                     let newsletterContainer = document.getElementById("newsletter-container");
                     data.forEach(file => {
                         if (file.name !== ".gitkeep") {
+                            let cleanTitle = file.name.replace(/[-_]/g, ' ').replace(/\.html/, '').replace(/\d+/g, '').trim();
                             let card = document.createElement("div");
                             card.classList.add("card");
                             card.innerHTML = `
-                                <h2>${file.name.replace(/[-_]/g, ' ').replace(/\.html/, '')}</h2>
+                                <h2>${cleanTitle}</h2>
                                 <a href="newsletters/${file.name}" target="_blank">Read More</a>
                             `;
                             newsletterContainer.appendChild(card);
