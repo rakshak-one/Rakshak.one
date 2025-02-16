@@ -27,11 +27,19 @@
             align-items: center;
             padding: 20px 0;
         }
-        .header h1 {
+        .logo {
             font-size: 36px;
             font-weight: 700;
-            color: #FFA500;
+            color: #fff;
             margin: 0 auto;
+            position: relative;
+        }
+        .logo::after {
+            content: " ●";
+            color: #FFA500;
+            font-size: 36px;
+            position: absolute;
+            right: -15px;
         }
         .back-button {
             padding: 8px 12px;
@@ -49,7 +57,7 @@
         .social-icons a {
             color: #FFA500;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 24px;
         }
         .grid {
             display: grid;
@@ -90,14 +98,15 @@
             font-weight: 600;
         }
     </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="header">
         <a href="index.html" class="back-button">Back</a>
-        <h1>Rakshak</h1>
+        <h1 class="logo">Rakshak</h1>
         <div class="social-icons">
-            <a href="https://www.instagram.com/rakshakhh/" target="_blank">Instagram</a>
-            <a href="https://www.linkedin.com/in/rakshak243/" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/rakshakhh/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/rakshak243/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
     </div>
     
