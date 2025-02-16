@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakshak</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 700px;
+            padding: 60px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 72px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            color: #fff;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+        h1::after {
+            content: '.';
+            color: #FFA500;
+            font-size: inherit;
+            position: absolute;
+            right: -12px;
+        }
+        p {
+            font-size: 22px;
+            font-weight: 400;
+            color: #ddd;
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+        p.italic-bold {
+            font-style: italic;
+            font-weight: 600;
+            color: #bbb;
+        }
+        p.bold {
+            font-weight: 600;
+            color: #fff;
+        }
+        .enter-button {
+            margin-top: 40px;
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            background: transparent;
+            border: 2px solid white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+        .enter-button:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RAKSHAK</h1>
+        <p class="italic-bold">A signal in the noise.</p>
+        <p class="bold">I write.</p>
+        <p>To refine thought.</p>
+        <p>To name what resists naming.</p>
+        <p>To trace the unseen architecture of reality.</p>
+        <p>Not to explain or persuade.</p>
+        <p>But to articulate what already exists.</p>
+        <p class="bold">If it resonates, you’ll know.</p>
+        <p>If it doesn’t, it wasn’t meant for you.</p>
+        <a href="#" class="enter-button">Enter</a>
+    </div>
+</body>
+</html>
