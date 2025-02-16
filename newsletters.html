@@ -25,27 +25,28 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
+            padding: 20px 0;
         }
         .header h1 {
             font-size: 36px;
             font-weight: 700;
             color: #FFA500;
-            margin: 0;
+            margin: 0 auto;
         }
         .back-button {
-            padding: 10px 15px;
+            padding: 8px 12px;
             background: #FFA500;
             color: #111;
             text-decoration: none;
             border-radius: 5px;
             font-weight: 600;
+            font-size: 14px;
         }
         .social-icons {
-            margin-top: 10px;
+            display: flex;
+            gap: 15px;
         }
         .social-icons a {
-            margin: 0 10px;
             color: #FFA500;
             text-decoration: none;
             font-size: 20px;
@@ -56,6 +57,7 @@
             gap: 20px;
             max-width: 1000px;
             width: 100%;
+            margin-top: 20px;
         }
         .card {
             background: rgba(255, 255, 255, 0.1);
@@ -93,14 +95,14 @@
     <div class="header">
         <a href="index.html" class="back-button">Back</a>
         <h1>Rakshak</h1>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/rakshakhh/" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/rakshak243/" target="_blank">LinkedIn</a>
+        </div>
     </div>
+    
     <h1>Newsletters</h1>
     
-    <div class="social-icons">
-        <a href="https://www.instagram.com/rakshakhh/" target="_blank">Instagram</a>
-        <a href="https://www.linkedin.com/in/rakshak243/" target="_blank">LinkedIn</a>
-    </div>
-
     <div class="grid" id="newsletter-container">
         <!-- Dynamic content will be inserted here -->
     </div>
