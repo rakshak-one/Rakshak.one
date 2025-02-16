@@ -133,22 +133,4 @@
                     data.forEach(file => {
                         if (file.name !== ".gitkeep") {
                             let cleanTitle = file.name.replace(/[-_]/g, ' ').replace(/\.html/, '').replace(/\d+/, '').trim();
-                            let imagePath = `images/${file.name.replace(/\.html/, '.jpg')}`;
-                            let newsletterPath = `newsletters/${file.name}`; 
-                            
-                            let card = document.createElement("div");
-                            card.classList.add("card");
-                            card.innerHTML = `
-                                <img src="${imagePath}" alt="${cleanTitle}" onerror="this.src='images/default.jpg';">
-                                <h2>${cleanTitle}</h2>
-                                <a href="${newsletterPath}" target="_blank">Read More</a>
-                            `;
-                            newsletterContainer.appendChild(card);
-                        }
-                    });
-                })
-                .catch(error => console.error("Error fetching newsletters:", error));
-        });
-    </script>
-</body>
-</html>
+                            let imagePath = `images/${file.n
