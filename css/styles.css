@@ -4,90 +4,100 @@ body {
     font-family: 'Inter', sans-serif;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     background-color: #111;
     color: #E4E4E4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 /* Centered Logo */
 h1 {
     font-size: 36px;
     font-weight: 700;
-    position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 h1 span {
     color: #FF6300;
 }
 
-/* Newsletter Page Layout */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2x2 on desktop, 1x1 on mobile */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     max-width: 900px;
-    width: 100%;
-    margin-top: 20px;
-    padding: 0 10px;
+    margin: 0 auto;
 }
 
 /* Newsletter Card */
 .card {
-    background: #222;
+    background: #1A1A1A;
     padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     text-align: left;
+    transition: transform 0.3s ease-in-out;
 }
 
 .card:hover {
     transform: translateY(-5px);
 }
 
-/* Card Image */
-.card img {
+/* Image inside Card */
+.card-image {
     width: 100%;
     height: auto;
-    object-fit: contain; /* Ensures full image is visible without cropping */
-    border-radius: 5px;
-    background-color: #000;
+    max-height: 180px; /* Controls image height to prevent it from being too big */
+    object-fit: contain; /* Ensures image is resized and not cropped */
+    border-radius: 8px;
+    background-color: #222; /* Adds a slight background for better visibility */
+    padding: 10px;
 }
 
-/* Card Content */
+/* Typography */
+.date {
+    font-size: 14px;
+    color: #999;
+    margin: 5px 0;
+}
+
 .card h3 {
     font-size: 18px;
     font-weight: 600;
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
 .card p {
-    font-size: 14px;
+    font-size: 16px;
     color: #ccc;
-    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 /* Read More Button */
 .read-more {
     display: inline-block;
     margin-top: 10px;
-    font-size: 14px;
-    color: #FF6300;
-    font-weight: 600;
+    padding: 8px 12px;
+    background: #FF6300;
+    color: white;
     text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .read-more:hover {
-    text-decoration: underline;
+    background: #cc4f00;
 }
 
-/* Responsive Layout */
+/* Responsive Grid */
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: 1fr; /* 1 column on mobile */
+        grid-template-columns: 1fr; /* Single column on mobile */
     }
 }
