@@ -28,76 +28,64 @@ h2 {
 /* Grid Layout */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2x2 on desktop, 1x1 on mobile */
     gap: 20px;
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 900px; /* Controls width */
+    width: 100%;
+    margin-top: 20px;
 }
 
 /* Newsletter Card */
 .card {
-    background: #1A1A1A;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    text-align: left;
+    background: #1a1a1a; /* Dark background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
+    text-align: left; /* Aligns content neatly */
+    overflow: hidden;
 }
 
+/* Card Hover Effect */
 .card:hover {
     transform: translateY(-5px);
 }
 
-/* Image inside Card */
-.card-image {
+/* Newsletter Image - No Cropping */
+.card img {
     width: 100%;
-    height: auto;
-    max-height: 180px; /* Controls image height to prevent it from being too big */
-    object-fit: contain; /* Ensures image is resized and not cropped */
+    height: 200px; /* Fixed height to maintain consistency */
+    object-fit: contain; /* Ensures full image is visible */
     border-radius: 8px;
-    background-color: #222; /* Adds a slight background for better visibility */
-    padding: 10px;
 }
 
-/* Typography */
-.date {
-    font-size: 14px;
-    color: #999;
-    margin: 5px 0;
-}
-
+/* Newsletter Title */
 .card h3 {
     font-size: 18px;
     font-weight: 600;
     margin: 10px 0;
 }
 
-.card p {
-    font-size: 16px;
-    color: #ccc;
-    margin-bottom: 10px;
+/* Date Styling */
+.card .date {
+    font-size: 14px;
+    color: #888;
 }
 
 /* Read More Button */
 .read-more {
     display: inline-block;
     margin-top: 10px;
-    padding: 8px 12px;
+    padding: 10px 15px;
     background: #FF6300;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     font-weight: 600;
     font-size: 14px;
+    transition: background 0.3s ease;
 }
 
 .read-more:hover {
     background: #cc4f00;
-}
-
-/* Responsive Grid */
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* Single column on mobile */
-    }
 }
